@@ -40,7 +40,7 @@ interface UserSchemaProperties extends UserSchemaFields {
 UserSchema.methods.foo = function() {};
 
 // Virtual properties
-interface UserDocument extends Document, UserSchemaFields {
+interface UserDocument extends Document, UserSchemaProperties {
   fullName: string;
 }
 
